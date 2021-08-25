@@ -22,3 +22,5 @@ export class Footer extends HTMLElement {
     }
 
 }
+
+!window.customElements.get('mf-footer') && window.customElements.define('mf-footer', Footer);

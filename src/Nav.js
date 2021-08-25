@@ -1,7 +1,7 @@
 export class Nav extends HTMLElement {
 
     connectedCallback() {
-        
+
         console.log('mf-nav connected');
 
         this.render();
@@ -22,3 +22,5 @@ export class Nav extends HTMLElement {
     }
 
 }
+
+!window.customElements.get('mf-nav') && window.customElements.define('mf-nav', Nav);

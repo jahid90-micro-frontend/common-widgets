@@ -27,30 +27,41 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(),
-        new HtmlWebpackPlugin({ 
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './src/templates/index.ejs',
+            inject: false,
+            chunks: ['index']
+        }),
+        new HtmlWebpackPlugin({
             filename: 'home.html',
-            template: './src/templates/home.html',
-            chunks: ['index', 'home']
+            template: './src/templates/home.ejs',
+            inject: false,
+            chunks: ['home']
         }),
-        new HtmlWebpackPlugin({ 
+        new HtmlWebpackPlugin({
             filename: 'about.html',
-            template: './src/templates/about.html',
-            chunks: ['index', 'about']
+            template: './src/templates/about.ejs',
+            inject: false,
+            chunks: ['about']
         }),
-        new HtmlWebpackPlugin({ 
+        new HtmlWebpackPlugin({
             filename: 'nav.html',
-            template: './src/templates/nav.html',
-            chunks: ['index', 'nav']
+            template: './src/templates/nav.ejs',
+            inject: false,
+            chunks: ['nav']
         }),
-        new HtmlWebpackPlugin({ 
+        new HtmlWebpackPlugin({
             filename: 'footer.html',
-            template: './src/templates/footer.html',
-            chunks: ['index', 'footer']
+            template: './src/templates/footer.ejs',
+            inject: false,
+            chunks: ['footer']
         }),
-        new HtmlWebpackPlugin({ 
+        new HtmlWebpackPlugin({
             filename: 'not-found.html',
-            template: './src/templates/not-found.html',
-            chunks: ['index', 'not_found']
+            template: './src/templates/not-found.ejs',
+            inject: false,
+            chunks: ['not_found']
         }),
     ]
 }

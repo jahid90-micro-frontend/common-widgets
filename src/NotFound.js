@@ -22,3 +22,5 @@ export class NotFound extends HTMLElement {
     }
 
 }
+
+!window.customElements.get('mf-not-found') && window.customElements.define('mf-not-found', NotFound);

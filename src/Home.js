@@ -26,3 +26,5 @@ export class Home extends HTMLElement {
     }
 
 }
+
+!window.customElements.get('mf-home') && window.customElements.define('mf-home', Home);

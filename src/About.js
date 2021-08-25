@@ -22,3 +22,5 @@ export class About extends HTMLElement {
     }
 
 }
+
+!window.customElements.get('mf-about') && window.customElements.define('mf-about', About);
