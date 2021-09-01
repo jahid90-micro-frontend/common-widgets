@@ -9,7 +9,7 @@
     "build": "webpack"
   },
   "devDependencies": {
-    "clean-webpack-plugin": "4.0.0-alpha.0",
+    "clean-webpack-plugin": "4.0.0",
     "html-webpack-plugin": "5.3.2",
     "pug": "3.0.2",
     "pug-loader": "2.4.0",
